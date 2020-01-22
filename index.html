@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/94974ff550.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+    <title></title>
+</head>
+
+<body>
+    
+    <div class="show-login-btn">
+    <i class="fas fa-sign-in-alt"></i>
+        Pokaż Panel Logowania
+    </div>
+    
+    
+    <div class="login-box">
+        
+    <div class="hide-login-btn">
+     <i class="fas fa-times"></i>
+    </div>
+        
+    <form class="login-form" action="index.html" method="post">
+        <h1>Witaj!</h1>
+        <input class="txtb" type="text" name="login"><br>
+        <input class="txtb" type="password" name="haslo"><br>
+        <input class="loginb" type="button" name="zaloguj" value="zaloguj">
+        </form>
+    </div>
+    
+    <script type="text/javascript">
+        
+    $(".show-login-btn").on("click", function(){                      
+    $(".login-box").toggleClass("showed")});
+    
+    $(".hide-login-btn").on("click", function(){                      
+    $(".login-box").toggleClass("showed")});
+    
+    </script>
+    
+</body>
+</html>
